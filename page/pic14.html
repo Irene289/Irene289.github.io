@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-11隔壁滷肉飯</title>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="pic.css">
+
+</head>
+<body>
+
+<div class="wrap">
+    <div class="container-fluid">
+        <div class="logo">Your Lunch Box</div>
+    </div>
+
+    <div class="main-content">
+        <input type="checkbox" id="menu_control">
+        <nav>
+            <label for="menu_control" class="menu_btn">
+                <span>選單</span>
+            </label>
+            <div class="nav-tabs">
+                <a class="nav-link active" href="../index.html">中式飯麵</a>
+                <a class="nav-link" href="../index.html">義大利麵</a>
+                <a class="nav-link" href="../index.html">韓式料理</a>
+                <a class="nav-link" href="../index.html">港式點心</a>
+                <a class="nav-link" href="../index.html">來點飲料</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="title">7-11隔壁滷肉飯</div>
+            <div class="box">
+                <div class="img">
+                    <img src="../PIC/pic_14.jpg">
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d582.8642160280468!2d121.3656841884032!3d25.056504969058867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x3442a739fe51733b%3A0x39651dd432e85728!2z5qGD5ZyS5biC6b6c5bGx5Y2A5paH6IiI6LevOUYtMeenkeeglOW4gumbhiBTQ2lLRVQgfCDorpPnp5Hlrbjmm7TmnInmlYjnjoc!3m2!1d25.056756999999998!2d121.365656!4m5!1s0x3442a739ef86cc75%3A0x68cfeeb6803182e3!2z5pep5Y2I6aSQ5bqX!3m2!1d25.0561102!2d121.3663289!5e0!3m2!1szh-TW!2stw!4v1615714151963!5m2!1szh-TW!2stw"  width="1400" height="600" frameborder="1" style="border: 1px solid lightgray;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <a href="oops.html"><img src="../PIC/foodpanda.png" class="btn panda"></a>
+                    <a href="oops.html"><img src="../PIC/ubereats.png" class="btn uber"></a>
+                </div>
+            </div>
+        </div>         
+    </div>
+</div>
+
+<footer> 
+    <p>&copy; 2020 Irene Liu</p>
+</footer>
+
+<!-- AOS -->
+<!-- 以下為JS -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $(function(){
+
+        // 頁籤
+        $(".nav-link:nth-child(1)").click(
+            function(){
+            $(".nav-link, .tab-pane").removeClass("active");
+            $(".nav-link:nth-child(1), .tab-pane:nth-child(1)").addClass("active");
+            }
+        ) 
+        $(".nav-link:nth-child(2)").click(
+            function(){
+            $(".nav-link, .tab-pane").removeClass("active");
+            $(".nav-link:nth-child(2), .tab-pane:nth-child(2)").addClass("active");
+            }
+        ) 
+        $(".nav-link:nth-child(3)").click(
+            function(){
+            $(".nav-link, .tab-pane").removeClass("active");
+            $(".nav-link:nth-child(3), .tab-pane:nth-child(3)").addClass("active");
+            }
+        ) 
+        $(".nav-link:nth-child(4)").click(
+            function(){
+            $(".nav-link, .tab-pane").removeClass("active");
+            $(".nav-link:nth-child(4), .tab-pane:nth-child(4)").addClass("active");
+            }
+        ) 
+        $(".nav-link:nth-child(5)").click(
+            function(){
+            $(".nav-link, .tab-pane").removeClass("active");
+            $(".nav-link:nth-child(5), .tab-pane:nth-child(5)").addClass("active");
+            }
+        )    
+
+    })
+    AOS.init();
+</script>
+
+</body>
+</html>
